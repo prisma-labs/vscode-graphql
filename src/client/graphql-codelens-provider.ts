@@ -26,7 +26,7 @@ export class GraphQLCodeLensProvider implements CodeLensProvider {
   ): CodeLens[] {
     const literals: ExtractedTemplateLiteral[] = this.sourceHelper.extractAllTemplateLiterals(
       document,
-      ["gql", "graphql"],
+      ["gql", "graphql", "/\\* GraphQL \\*/"],
     )
     return literals.map(literal => {
       return new CodeLens(
