@@ -213,7 +213,7 @@
     "@types/dotenv": "^8.2.0",
     "@types/mocha": "5.2.7",
     "@types/node": "12.12.34",
-    "@types/ws": "6.0.4",
+    "@types/ws": "7.2.3",
     "tslint": "5.20.1",
     "typescript": "3.9.7",
     "vsce": "^1.78.0",
