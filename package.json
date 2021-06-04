@@ -37,8 +37,8 @@
     "onCommand:vscode-graphql.contentProvider",
     "onLanguage:graphql",
     "workspaceContains:**/.graphqlrc",
-    "workspaceContains:**/.graphqlrc.{json,yaml,yml,js}",
-    "workspaceContains:**/graphql.config.{json,yaml,yml,js}"
+    "workspaceContains:**/.graphqlrc.{json,yaml,yml,js,ts}",
+    "workspaceContains:**/graphql.config.{json,yaml,yml,js,ts}"
   ],
   "main": "./out/extension",
   "contributes": {
