@@ -70,10 +70,11 @@ export async function activate(context: ExtensionContext) {
       { scheme: "file", language: "javascriptreact" },
       { scheme: "file", language: "typescript" },
       { scheme: "file", language: "typescriptreact" },
+      { scheme: "file", language: "vue" },
     ],
     synchronize: {
       fileEvents: workspace.createFileSystemWatcher(
-        "**/{*.graphql,*.graphqls,*.gql,*.js,*.jsx,*.ts,*.tsx,graphql.config.*,.graphqlrc,.graphqlrc.*,package.json}",
+        "**/{*.graphql,*.graphqls,*.gql,*.js,*.jsx,*.ts,*.tsx,*.vue,graphql.config.*,.graphqlrc,.graphqlrc.*,package.json}",
       ),
     },
     outputChannel: outputChannel,
@@ -119,6 +120,7 @@ export async function activate(context: ExtensionContext) {
           "typescript",
           "javascriptreact",
           "typescriptreact",
+          "vue",
           "graphql",
         ],
         new GraphQLCodeLensProvider(outputChannel),
